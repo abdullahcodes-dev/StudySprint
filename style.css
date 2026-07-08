@@ -85,3 +85,23 @@ footer {
 footer p {
     margin-bottom: 10px;
 }
+
+ul {
+    list-style: none;
+
+    padding: 0;
+
+    margin: 0;
+}
+
+li {
+    padding: 15px;
+    
+    background-color: #f5f7fa;
+
+    border-radius: 20px;
+
+    margin-bottom: 20px;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
