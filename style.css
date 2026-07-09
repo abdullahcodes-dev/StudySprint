@@ -24,6 +24,10 @@ button {
     padding: 12px 20px;
 
     margin: 10px;
+
+    transition: 0.2s ease;
+
+    cursor: pointer;
 }
 
 input {
@@ -104,4 +108,18 @@ li {
     margin-bottom: 20px;
 
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
+    transition: 0.2s ease;
+}
+
+button:hover {
+    transform: translateY(-3px);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+li:hover {
+    transform: translateY(-3px);
 }
