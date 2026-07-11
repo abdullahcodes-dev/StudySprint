@@ -18,6 +18,14 @@ addTaskButton.addEventListener("click", function(event) {
 
     newTask.textContent = task;
 
+    const checkbox = document.createElement("input");
+
+    checkbox.type = "checkbox";
+
+    checkbox.addEventListener("change", function() {
+        newTask.classList.toggle("completed");
+    })
+
     const deleteButton = document.createElement("button");
 
     deleteButton.textContent = "Delete";
@@ -25,6 +33,8 @@ addTaskButton.addEventListener("click", function(event) {
     deleteButton.addEventListener("click", function() {
         newTask.remove();
     })
+
+    newTask.prepend(checkbox);
 
     newTask.appendChild(deleteButton);
 
