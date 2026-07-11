@@ -20,8 +20,6 @@ for (const task of tasks) {
     createTask(task);
 }
 
-console.log(tasks);
-
 function updateProgress() {
     const totalTasks = taskList.children.length;
 
@@ -37,14 +35,24 @@ function updateProgress() {
 function createTask(task) {
     const newTask = document.createElement("li");
 
-    newTask.textContent = task;
+    newTask.textContent = task.text;
 
     const checkbox = document.createElement("input");
 
     checkbox.type = "checkbox";
 
+    checkbox.checked = task.completed;
+
+    if (task.completed) {
+        newTask.classList.add("completed");
+    }
+
     checkbox.addEventListener("change", function() {
         newTask.classList.toggle("completed");
+
+        task.completed = checkbox.checked;
+
+        localStorage.setItem("tasks", JSON.stringify(tasks));
 
         updateProgress();
     })
@@ -84,13 +92,16 @@ addTaskButton.addEventListener("click", function(event) {
         return;
     }
 
-    tasks.push(task);
+    const newTask = {
+        text: task,
+        completed: false
+    }
 
-    console.log(tasks);
+    tasks.push(newTask);
 
     localStorage.setItem("tasks", JSON.stringify(tasks));
 
-    createTask(task);
+    createTask(newTask);
 
     taskInput.value = "";
 })
