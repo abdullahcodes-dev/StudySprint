@@ -29,7 +29,7 @@ A responsive task management web application built with **HTML, CSS, and Vanilla
 - 💾 Local Storage persistence
 - ⌨️ Add tasks by pressing Enter
 - 🚀 Friendly empty state when no tasks exist
-- 📱 Clean and responsive interface
+- 📱 Clean and intuitive interface
 
 ---
 
@@ -90,7 +90,6 @@ Building **StudySprint** helped me strengthen my understanding of:
 - Arrays & Objects
 - Local Storage
 - Dynamic UI Updates
-- Responsive CSS
 - Git & GitHub Workflow
 - Deploying a static website using Netlify
 
