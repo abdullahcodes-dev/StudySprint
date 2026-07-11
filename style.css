@@ -20,6 +20,14 @@ section {
     margin: 40px 0;
 }
 
+form {
+    display: flex;
+
+    gap: 12px;
+
+    align-items: center;
+}
+
 button {
     background-color: #2563eb;
 
@@ -42,7 +50,7 @@ button {
 
 input {
 
-    width: 65%;
+    flex: 1;
 
     border: 1px solid #cbd5e1;
 
@@ -50,7 +58,7 @@ input {
 
     padding: 12px 18px;
 
-    margin-top: 20px;
+    margin: 0;
 
     outline: none;
 
@@ -122,21 +130,70 @@ ul {
 }
 
 li {
-    padding: 15px;
-    
-    background-color: #f5f7fa;
+    display: flex;
 
-    border-radius: 20px;
+    align-items: center;
 
-    margin-bottom: 20px;
+    justify-content: space-between;
 
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    gap: 15px;
 
-    transition: 0.2s ease;
+    padding: 16px 20px;
+
+    background: white;
+
+    border: 1px solid #e2e8f0;
+
+    border-radius: 16px;
+
+    margin-bottom: 16px;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+
+    transition: all 0.25s ease;
+}
+
+li span {
+    flex: 1;
+
+    font-size: 16px;
+
+    color: #1e293b;
+
+    word-break: break-word;
+}
+
+li input[type="checkbox"] {
+    width: 18px;
+
+    height: 18px;
+
+    margin: 0;
+
+    cursor: pointer;
+
+    flex-shrink: 0;
+}
+
+li button {
+    background: #ef4444;
+
+    padding: 8px 14px;
+
+    border-radius: 10px;
+
+    font-size: 14px;
+
+    margin: 0;
+}
+
+li button:hover {
+    background: #dc2626;
 }
 
 button:hover {
     transform: translateY(-2px);
+
     background: #1d4ed8;
 }
 
@@ -145,13 +202,17 @@ button:active {
 }
 
 li:hover {
-    transform: translateY(-3px);
+    transform: translateY(-4px);
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.10);
 }
 
 .completed {
     text-decoration: line-through;
 
     opacity: 0.6;
+
+    color: #64748b;
 }
 
 p {
@@ -159,3 +220,4 @@ p {
 
     line-height: 1.6;
 }
+

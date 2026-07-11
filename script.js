@@ -8,6 +8,8 @@ const progressText = document.querySelector("#progress-text");
 
 const progressBar = document.querySelector("#progress-bar");
 
+const emptyState = document.querySelector("#empty-state");
+
 let tasks = [];
 
 const savedTasks = localStorage.getItem("tasks");
@@ -30,12 +32,20 @@ function updateProgress() {
     progressBar.max = totalTasks;
 
     progressBar.value = completedTasks;
+
+    if (totalTasks === 0) {
+        emptyState.style.display = "block";
+    } else {
+        emptyState.style.display = "none";
+    }
 }
 
 function createTask(task) {
     const newTask = document.createElement("li");
 
-    newTask.textContent = task.text;
+    const taskText = document.createElement("span");
+
+    taskText.textContent = task.text;
 
     const checkbox = document.createElement("input");
 
@@ -73,7 +83,9 @@ function createTask(task) {
         updateProgress();
     })
 
-    newTask.prepend(checkbox);
+    newTask.appendChild(checkbox);
+
+    newTask.appendChild(taskText);
 
     newTask.appendChild(deleteButton);
 
@@ -104,4 +116,10 @@ addTaskButton.addEventListener("click", function(event) {
     createTask(newTask);
 
     taskInput.value = "";
+})
+
+taskInput.addEventListener("keydown", function(event) {
+    if (event.key === "Enter") {
+        addTaskButton.click();
+    }
 })
