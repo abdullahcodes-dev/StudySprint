@@ -1,80 +1,120 @@
 # 📚 StudySprint
 
-StudySprint is a clean and responsive task management web application built using **HTML, CSS, and Vanilla JavaScript**.
+A responsive task management web application built with **HTML, CSS, and Vanilla JavaScript** to practice DOM manipulation, Local Storage, and modern frontend development fundamentals.
 
-It helps users organize their daily study tasks, track their progress, and stay productive through a simple and intuitive interface.
+🌐 **Live Demo:** https://studysprint-app.netlify.app/
+
+💻 **Source Code:** https://github.com/abdullahcodes-dev/StudySprint
+
+---
+
+## 📸 Preview
+
+### Home Screen
+
+![Home Screen](assets/images/screenshot-home.png)
+
+### Tasks in Action
+
+![Tasks](assets/images/screenshot-tasks.png)
 
 ---
 
 ## ✨ Features
 
-- ✅ Add new tasks
+- ➕ Add new tasks
+- ✅ Mark tasks as completed
 - 🗑️ Delete tasks
-- ☑️ Mark tasks as completed
 - 📊 Live progress tracking
-- 💾 Local Storage support (tasks persist after refresh)
-- ⌨️ Press Enter to quickly add tasks
-- 📱 Responsive and modern UI
-- 🚀 Empty state when no tasks are available
+- 💾 Local Storage persistence
+- ⌨️ Add tasks by pressing Enter
+- 🚀 Friendly empty state when no tasks exist
+- 📱 Clean and responsive interface
 
 ---
 
-## 🛠️ Built With
+## 🛠️ Tech Stack
 
 - HTML5
 - CSS3
 - Vanilla JavaScript
 - Local Storage API
+- Git & GitHub
+- Netlify
+
+---
+
+## 📂 Project Structure
+
+```text
+StudySprint/
+│
+├── assets/
+│   └── images/
+│       ├── logo.png
+│       ├── screenshot-home.png
+│       └── screenshot-tasks.png
+│
+├── index.html
+├── style.css
+├── script.js
+├── README.md
+└── .gitignore
+```
 
 ---
 
 ## 🚀 Getting Started
 
-1. Clone this repository.
+1. Clone the repository
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/abdullahcodes-dev/StudySprint.git
 ```
 
 2. Open the project folder.
 
 3. Open `index.html` in your browser.
 
-No additional setup is required.
+No additional setup or dependencies are required.
 
 ---
 
-## 📂 Project Structure
+## 📚 What I Learned
 
-```
-StudySprint/
-│
-├── index.html
-├── style.css
-├── script.js
-│
-├── assets/
-│   └── images/
-│       └── logo.png
-│
-├── .gitignore
-└── README.md
-```
+Building **StudySprint** helped me strengthen my understanding of:
+
+- DOM Manipulation
+- JavaScript Event Handling
+- Functions and Code Organization
+- Arrays & Objects
+- Local Storage
+- Dynamic UI Updates
+- Responsive CSS
+- Git & GitHub Workflow
+- Deploying a static website using Netlify
 
 ---
 
-## 🌱 Future Improvements
+## 🚀 Future Improvements
 
-- Task categories
-- Due dates
-- Dark mode
-- Drag and drop task ordering
-- Task search and filtering
+- ✏️ Edit existing tasks
+- 🌙 Dark mode
+- 🗂️ Task categories
+- 📅 Due dates
+- 🔍 Search and filtering
+- ↕️ Drag-and-drop task ordering
 
 ---
 
 ## 👨‍💻 Author
 
-Muhammad Abdullah
+**Muhammad Abdullah**
 
-Built as a learning project while exploring JavaScript, DOM Manipulation, Local Storage, Git, and GitHub.
+BSCS Student | Aspiring AI & Software Engineer
+
+GitHub: https://github.com/abdullahcodes-dev
+
+---
+
+If you have suggestions or feedback, feel free to open an issue or submit a pull request.
